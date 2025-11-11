@@ -1,0 +1,26 @@
+{
+    "required_api_version": "2",
+    "name": "Ulauncher Screen Brightness",
+    "description": "Changes the brightness of all configured displays using ddcutil.",
+    "developer_name": "Thorsten Merten",
+    "icon": "images/icon.png",
+    "options": {
+        "query_debounce": 0.1
+    },
+    "preferences": [
+        {
+            "id": "keyword",
+            "type": "keyword",
+            "name": "Brightness keyword",
+            "description": "",
+            "default_value": "brightness"
+        },
+        {
+            "id": "displays",
+            "type": "input",
+            "name": "Displays to control separated by comma.",
+            "description": "E.g. '1,2' to control display 1 and 2. Display numbers start with 1.",
+            "default_value": "1"
+        }
+    ]
+}
